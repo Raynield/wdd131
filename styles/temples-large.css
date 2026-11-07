@@ -1,0 +1,22 @@
+@media screen and (min-width: 650px) {
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: transparent;
+  }
+
+  .navigation a {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}

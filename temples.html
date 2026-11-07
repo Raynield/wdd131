@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Picture Album - Rayniel Elias Druyard Rojas</title>
+    <meta name="description" content="WDD 131 Picture Album assignment showcasing a collection of Latter-day Saint temples using responsive design, CSS Grid, Flexbox, and JavaScript.">
+    <meta name="author" content="Rayniel Elias Druyard Rojas">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="grid">
+            <figure>
+                <img src="images/guatemala_temple.jpg" alt="Guatemala City Temple" width="400" height="250" loading="lazy">
+                <figcaption>Guatemala City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/guayaquil_ecuador_temple.jpg" alt="Guayaquil Ecuador Temple" width="400" height="250" loading="lazy">
+                <figcaption>Guayaquil Ecuador Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/haiti_temple.jpg" alt="Port-au-Prince Haiti Temple" width="400" height="250" loading="lazy">
+                <figcaption>Port-au-Prince Haiti Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mexico_city_temple.jpg" alt="Mexico City Temple" width="400" height="250" loading="lazy">
+                <figcaption>Mexico City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/puebla_mexico_temple.jpg" alt="Puebla Mexico Temple" width="400" height="250" loading="lazy">
+                <figcaption>Puebla Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/puebla_mexico_temple_exterior.jpg" alt="Puebla Mexico Temple Exterior" width="400" height="250" loading="lazy">
+                <figcaption>Puebla Mexico Exterior</figcaption>
+            </figure>
+            <figure>
+                <img src="images/quito_ecuador_temple.jpg" alt="Quito Ecuador Temple" width="400" height="250" loading="lazy">
+                <figcaption>Quito Ecuador Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san_juan_puerto_rico_temple.jpg" alt="San Juan Puerto Rico Temple" width="400" height="250" loading="lazy">
+                <figcaption>San Juan Puerto Rico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/santo_domingo_temple.jpg" alt="Santo Domingo Dominican Republic Temple" width="400" height="250" loading="lazy">
+                <figcaption>Santo Domingo Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Rayniel Elias Druyard Rojas | Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
