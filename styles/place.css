@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #002D62;      /* Navy Blue */
+    --secondary-color: #CE1126;    /* Vermilion Red */
+    --accent-light: #FFFFFF;       /* Pure White */
+    --text-dark: #1A1A1A;          /* Dark text for high contrast */
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    background-color: var(--accent-light);
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 10px solid var(--secondary-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Hero Image Styles */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+/* Cards (Mobile View by default) */
+.card {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.weather-svg {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+
+/* Info Grid Alignment */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 0.75rem;
+    max-width: 340px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+.info-grid dt {
+    font-weight: 600;
+    text-align: right;
+}
+
+.info-grid dd {
+    text-align: left;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* =========================================
+   DESKTOP VIEW (Media Query >= 768px)
+   ========================================= */
+@media (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        border-bottom: none;
+        max-height: 750px;
+    }
+
+    .card {
+        position: absolute;
+        background-color: var(--card-bg);
+        width: 310px;
+        padding: 0 0 1.25rem 0;
+        border-bottom: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    /* Desktop Positioning based on wireframe */
+    .data {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .weather {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .card h2 {
+        background-color: var(--secondary-color);
+        color: var(--accent-light);
+        text-align: left;
+        padding: 0.6rem 1.2rem;
+        margin: 1rem 1rem 1rem -0.75rem;
+        font-size: 1.35rem;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hide SVG in desktop view */
+    .weather-svg {
+        display: none;
+    }
+
+    /* Pseudo-element emoticon only in wider view */
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.5rem;
+    }
+
+    .info-grid {
+        padding: 0 1rem;
+        font-size: 0.9rem;
+    }
+}
