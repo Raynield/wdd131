@@ -4,29 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filtered Temples Album | WDD 131</title>
-  <meta name="description" content="Explore a filterable photo album of temples with dedication dates, locations, areas, and lazy-loaded images.">
+  <meta name="description" content="Explore a responsive, filterable temple photo album with dedication dates, locations, areas, and lazy-loaded images.">
   <meta name="author" content="Rayniel Elias Druyard Rojas">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="filtered-temples.css">
-  <script src="filtered-temples.js" defer></script>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="header-top">
+    <div class="header-inner">
       <span class="site-title">Temple Album</span>
       <button id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <nav id="main-nav" aria-label="Primary Navigation">
+        <ul id="nav-menu">
+          <li><a href="#home" data-filter="home" class="active">Home</a></li>
+          <li><a href="#old" data-filter="old">Old</a></li>
+          <li><a href="#new" data-filter="new">New</a></li>
+          <li><a href="#large" data-filter="large">Large</a></li>
+          <li><a href="#small" data-filter="small">Small</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav aria-label="Primary Navigation">
-      <ul id="nav-menu">
-        <li><a href="#" data-filter="home" class="active">Home</a></li>
-        <li><a href="#" data-filter="old">Old</a></li>
-        <li><a href="#" data-filter="new">New</a></li>
-        <li><a href="#" data-filter="large">Large</a></li>
-        <li><a href="#" data-filter="small">Small</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>

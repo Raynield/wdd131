@@ -85,7 +85,7 @@ const templesContainer = document.querySelector("#temples-container");
 const pageHeading = document.querySelector("#page-heading");
 const navLinks = document.querySelectorAll("#nav-menu a");
 const menuToggle = document.querySelector("#menu-toggle");
-const navElement = document.querySelector("nav");
+const mainNav = document.querySelector("#main-nav");
 
 function getDedicatedYear(dedicatedString) {
   return Number.parseInt(dedicatedString.split(",")[0].trim(), 10);
@@ -143,13 +143,13 @@ navLinks.forEach((link) => {
 
     filterTemples(selectedFilter);
 
-    navElement.classList.remove("open");
+    mainNav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
   });
 });
 
 menuToggle.addEventListener("click", () => {
-  const isOpen = navElement.classList.toggle("open");
+  const isOpen = mainNav.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
 });
 
