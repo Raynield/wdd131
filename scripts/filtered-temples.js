@@ -61,7 +61,7 @@ const temples = [
     dedicated: "2000, September, 17",
     area: 67000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santo-domingo-dominican-republic/400x250/santo-domingo-dominican-republic-temple-lds-761600-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santo-domingo-dominican-republic/400x250/santo-domingo-dominican-republic-temple-lds-152267-wallpaper.jpg"
   },
   {
     templeName: "Salt Lake",
