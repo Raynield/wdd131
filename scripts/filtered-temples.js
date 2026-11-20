@@ -56,12 +56,12 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   {
-    templeName: "Santo Domingo Dominican Republic",
-    location: "Santo Domingo, Dominican Republic",
-    dedicated: "2000, September, 17",
-    area: 67000,
+    templeName: "Buenos Aires Argentina",
+    location: "Ciudad Evita, Buenos Aires, Argentina",
+    dedicated: "1986, January, 17",
+    area: 149576,
     imageUrl:
-      "https://churchofjesuschristtemples.org/santo-domingo-dominican-republic-temple/"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-aires-argentina-temple-lds-827337-wallpaper.jpg"
   },
   {
     templeName: "Salt Lake",
