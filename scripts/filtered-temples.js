@@ -55,13 +55,13 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
- {
-    templeName: "Guadalajara Mexico",
-    location: "Zapopan, Jalisco, Mexico",
-    dedicated: "2001, April, 29",
-    area: 10700,
+{
+    templeName: "Santo Domingo Dominican Republic",
+    location: "Santo Domingo, Dominican Republic",
+    dedicated: "2000, September, 17",
+    area: 67000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guadalajara-mexico/400x250/guadalajara-mexico-temple-lds-1035036-wallpaper.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/santo-domingo-dominican-republic-temple/santo-domingo-dominican-republic-temple-1444-main.jpg"
   },
   {
     templeName: "Salt Lake",
