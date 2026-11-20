@@ -1,0 +1,190 @@
+:root {
+  --primary-color: #2c1654;
+  --accent-color: #4b287a;
+  --bg-page: #f5f5f7;
+  --bg-card: #ececef;
+  --text-dark: #1f1f24;
+  --text-muted: #4a4a55;
+  --border-color: #d5d5dc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#menu-toggle {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  padding: 0.25rem 0.65rem;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  background-color: var(--accent-color);
+}
+
+nav.open {
+  display: block;
+}
+
+#nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-menu li a {
+  display: block;
+  padding: 0.85rem 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+#nav-menu li a:hover,
+#nav-menu li a.active {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+}
+
+.temples-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.temple-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.temple-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+
+.temple-details {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.temple-details p {
+  margin: 0.2rem 0;
+}
+
+.label {
+  color: var(--accent-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+}
+
+.temple-card img {
+  width: 100%;
+  max-width: 340px;
+  height: 210px;
+  object-fit: cover;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+}
+
+footer p + p {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+@media only screen and (min-width: 640px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  nav,
+  nav.open {
+    display: block;
+    background-color: var(--primary-color);
+  }
+
+  #nav-menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 0 1.5rem 0.75rem;
+  }
+
+  #nav-menu li a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  .temples-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .temples-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
