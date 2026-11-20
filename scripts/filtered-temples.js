@@ -55,13 +55,13 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  {
-    templeName: "Buenos Aires Argentina",
-    location: "Ciudad Evita, Buenos Aires, Argentina",
-    dedicated: "1986, January, 17",
-    area: 149576,
+ {
+    templeName: "Guadalajara Mexico",
+    location: "Zapopan, Jalisco, Mexico",
+    dedicated: "2001, April, 29",
+    area: 10700,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-aires-argentina-temple-lds-827337-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guadalajara-mexico/400x250/guadalajara-mexico-temple-lds-1035036-wallpaper.jpg"
   },
   {
     templeName: "Salt Lake",
