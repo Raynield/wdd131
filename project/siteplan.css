@@ -1,0 +1,250 @@
+:root {
+    --primary-color: #1E2D2F;
+    --bg-color: #FAF6F0;
+    --accent-color: #A63A1E;
+    --text-color: #222222;
+    --card-bg: #FFFFFF;
+    --border-color: #D6CEC2;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 1.5rem 1rem;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-logo {
+    flex-shrink: 0;
+}
+
+.doc-label {
+    font-family: var(--heading-font);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: #F2D0A9;
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 1.85rem;
+    color: var(--bg-color);
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.75rem;
+}
+
+.plan-section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(30, 45, 47, 0.06);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 0.75rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.domain-note {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+code {
+    background-color: var(--bg-color);
+    padding: 0.2rem 0.45rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    color: var(--accent-color);
+}
+
+.scenario-list {
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.65rem;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-card {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+.swatch {
+    height: 72px;
+    width: 100%;
+}
+
+.swatch-primary {
+    background-color: #1E2D2F;
+}
+
+.swatch-background {
+    background-color: #FAF6F0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.swatch-accent {
+    background-color: #A63A1E;
+}
+
+.swatch-text {
+    background-color: #222222;
+}
+
+.swatch-info {
+    padding: 0.9rem;
+}
+
+.swatch-info h3 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.hex-code {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.typo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.typo-card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.typo-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.font-heading-sample {
+    font-family: var(--heading-font);
+}
+
+.font-body-sample {
+    font-family: var(--body-font);
+}
+
+.sample-preview {
+    margin-top: 0.75rem;
+    padding-top: 0.65rem;
+    border-top: 1px dashed var(--border-color);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.wireframe-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.wireframe-card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.wireframe-card figcaption {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.85rem;
+}
+
+.wireframe-card svg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2.5rem;
+    border-top: 4px solid var(--accent-color);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .wireframe-grid {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+    }
+}

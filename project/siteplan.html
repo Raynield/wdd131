@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Caribe Rhythm Hub</title>
+    <meta name="description" content="Website planning document for Caribe Rhythm Hub, covering site name, purpose, target audience scenarios, color schema, typography, and responsive wireframes.">
+    <meta name="author" content="Rayniel Elias Druyard Rojas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <svg class="site-logo" viewBox="0 0 64 64" width="56" height="56" role="img" aria-label="Caribe Rhythm Hub Drum Logo">
+                <circle cx="32" cy="32" r="30" fill="#FAF6F0"/>
+                <path d="M18 20 L46 20 L42 46 L22 46 Z" fill="#A63A1E"/>
+                <ellipse cx="32" cy="20" rx="14" ry="4" fill="#D9822B"/>
+                <line x1="21" y1="22" x2="25" y2="45" stroke="#1E2D2F" stroke-width="2.5"/>
+                <line x1="32" y1="24" x2="32" y2="46" stroke="#1E2D2F" stroke-width="2.5"/>
+                <line x1="43" y1="22" x2="39" y2="45" stroke="#1E2D2F" stroke-width="2.5"/>
+            </svg>
+            <div class="header-text">
+                <p class="doc-label">WEBSITE PLANNING DOCUMENT</p>
+                <h1>Caribe Rhythm Hub</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="plan-section">
+            <h2>1. Site Name</h2>
+            <p><strong>Caribe Rhythm Hub</strong> &mdash; This name clearly identifies an interactive learning hub and instrument reference guide focused on Afro-Caribbean percussion, Salsa montuno grooves, and Merengue rhythms. It communicates cultural identity while remaining accessible to learners worldwide.</p>
+            <p class="domain-note">Optional domain availability: <code>cariberhythmhub.org</code></p>
+        </section>
+
+        <section class="plan-section">
+            <h2>2. Site Purpose</h2>
+            <p>The purpose of Caribe Rhythm Hub is to provide a structured educational resource and instrument guide for Latin percussionists. The website will feature instrument profiles (bongos, güira, tambora, and congas), rhythm breakdowns for Salsa and Merengue, skin-head tuning and care tips, and an interactive practice planner and workshop registration form.</p>
+        </section>
+
+        <section class="plan-section">
+            <h2>3. Scenarios</h2>
+            <ul class="scenario-list">
+                <li>What are the core percussion instruments in traditional Merengue and Salsa ensembles, and how do their rhythmic roles complement one another?</li>
+                <li>How do I tune and care for natural skin drumheads on bongos and tamboras in warm, humid climates?</li>
+                <li>How can I filter instruments by family or tempo, save favorite rhythm notes, and register for percussion practice sessions?</li>
+            </ul>
+        </section>
+
+        <section class="plan-section">
+            <h2>4. Color Schema</h2>
+            <p>The color schema pairs deep coastal slate and warm parchment with terracotta accents inspired by handcrafted drums, maintaining high contrast for readability and accessibility.</p>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="swatch swatch-primary"></div>
+                    <div class="swatch-info">
+                        <h3>Deep Teak Slate</h3>
+                        <p class="hex-code">#1E2D2F</p>
+                        <p>Applied to header, footer, main headings, and primary navigation surfaces.</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="swatch swatch-background"></div>
+                    <div class="swatch-info">
+                        <h3>Warm Parchment</h3>
+                        <p class="hex-code">#FAF6F0</p>
+                        <p>Applied as the main page background color for comfortable reading.</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="swatch swatch-accent"></div>
+                    <div class="swatch-info">
+                        <h3>Terracotta Drum</h3>
+                        <p class="hex-code">#A63A1E</p>
+                        <p>Applied to primary buttons, links, borders, and key visual accents.</p>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="swatch swatch-text"></div>
+                    <div class="swatch-info">
+                        <h3>Charcoal Ink</h3>
+                        <p class="hex-code">#222222</p>
+                        <p>Applied to body text, lists, and labels for high contrast against light backgrounds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>5. Typography</h2>
+            <p>Two Google Fonts are selected to give clear typographic hierarchy across headings and body text:</p>
+            <div class="typo-grid">
+                <div class="typo-card">
+                    <h3 class="font-heading-sample">Montserrat (600, 700)</h3>
+                    <p><strong>Usage:</strong> Site title, section headings (<code>h1</code>, <code>h2</code>, <code>h3</code>), navigation items, and button text.</p>
+                    <p class="sample-preview font-heading-sample">Caribe Rhythm Hub &mdash; Salsa &amp; Merengue 123</p>
+                </div>
+                <div class="typo-card">
+                    <h3 class="font-body-sample">Open Sans (400, 600)</h3>
+                    <p><strong>Usage:</strong> Body paragraphs, descriptions, lists, cards, and form fields.</p>
+                    <p class="sample-preview font-body-sample">Clear, readable body copy for rhythm guides and notes 123</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>6. Wireframes</h2>
+            <p>Wireframe blueprints for the home page (<code>index.html</code>) in mobile and desktop viewports:</p>
+            <div class="wireframe-grid">
+                <figure class="wireframe-card">
+                    <figcaption>Mobile Wireframe (375px)</figcaption>
+                    <svg viewBox="0 0 260 500" role="img" aria-label="Mobile Homepage Wireframe">
+                        <rect x="5" y="5" width="250" height="490" rx="12" fill="#FFFFFF" stroke="#1E2D2F" stroke-width="2"/>
+                        <rect x="15" y="15" width="230" height="42" fill="#1E2D2F"/>
+                        <circle cx="35" cy="36" r="10" fill="#FAF6F0"/>
+                        <text x="54" y="40" fill="#FAF6F0" font-size="11" font-family="sans-serif">Brand &amp; Menu</text>
+                        <rect x="212" y="27" width="22" height="3" fill="#FAF6F0"/>
+                        <rect x="212" y="34" width="22" height="3" fill="#FAF6F0"/>
+                        <rect x="212" y="41" width="22" height="3" fill="#FAF6F0"/>
+
+                        <rect x="15" y="68" width="230" height="110" fill="#FAF6F0" stroke="#A63A1E" stroke-width="1.5"/>
+                        <text x="130" y="112" text-anchor="middle" fill="#1E2D2F" font-size="12" font-weight="bold" font-family="sans-serif">Hero Banner</text>
+                        <rect x="75" y="128" width="110" height="28" rx="4" fill="#A63A1E"/>
+                        <text x="130" y="146" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="sans-serif">Explore Guide</text>
+
+                        <rect x="15" y="190" width="230" height="72" fill="#FAF6F0" stroke="#1E2D2F" stroke-width="1"/>
+                        <text x="130" y="230" text-anchor="middle" fill="#222222" font-size="11" font-family="sans-serif">Section 1: Salsa Percussion</text>
+
+                        <rect x="15" y="274" width="230" height="72" fill="#FAF6F0" stroke="#1E2D2F" stroke-width="1"/>
+                        <text x="130" y="314" text-anchor="middle" fill="#222222" font-size="11" font-family="sans-serif">Section 2: Merengue Grooves</text>
+
+                        <rect x="15" y="358" width="230" height="72" fill="#FAF6F0" stroke="#1E2D2F" stroke-width="1"/>
+                        <text x="130" y="398" text-anchor="middle" fill="#222222" font-size="11" font-family="sans-serif">Section 3: Practice &amp; Care</text>
+
+                        <rect x="15" y="442" width="230" height="42" fill="#1E2D2F"/>
+                        <text x="130" y="467" text-anchor="middle" fill="#FAF6F0" font-size="10" font-family="sans-serif">Footer &amp; References</text>
+                    </svg>
+                </figure>
+
+                <figure class="wireframe-card">
+                    <figcaption>Desktop Wireframe (1024px+)</figcaption>
+                    <svg viewBox="0 0 540 410" role="img" aria-label="Desktop Homepage Wireframe">
+                        <rect x="5" y="5" width="530" height="400" rx="8" fill="#FFFFFF" stroke="#1E2D2F" stroke-width="2"/>
+                        <rect x="15" y="15" width="510" height="46" fill="#1E2D2F"/>
+                        <circle cx="38" cy="38" r="11" fill="#FAF6F0"/>
+                        <text x="58" y="42" fill="#FAF6F0" font-size="12" font-weight="bold" font-family="sans-serif">Caribe Rhythm Hub</text>
+                        <text x="315" y="42" fill="#FAF6F0" font-size="11" font-family="sans-serif">Home   |   Instruments   |   Workshops</text>
+
+                        <rect x="15" y="72" width="510" height="125" fill="#FAF6F0" stroke="#A63A1E" stroke-width="1.5"/>
+                        <text x="160" y="122" text-anchor="middle" fill="#1E2D2F" font-size="13" font-weight="bold" font-family="sans-serif">Hero Intro &amp; CTA</text>
+                        <rect x="95" y="138" width="130" height="28" rx="4" fill="#A63A1E"/>
+                        <text x="160" y="156" text-anchor="middle" fill="#FFFFFF" font-size="11" font-family="sans-serif">Start Exploring</text>
+                        <rect x="305" y="86" width="205" height="96" fill="#FFFFFF" stroke="#1E2D2F" stroke-width="1"/>
+                        <text x="407" y="138" text-anchor="middle" fill="#222222" font-size="11" font-family="sans-serif">Featured Rhythm Box</text>
+
+                        <rect x="15" y="210" width="162" height="125" fill="#FAF6F0" stroke="#1E2D2F" stroke-width="1"/>
+                        <text x="96" y="276" text-anchor="middle" fill="#222222" font-size="11" font-family="sans-serif">Salsa Percussion</text>
+
+                        <rect x="189" y="210" width="162" height="125" fill="#FAF6F0" stroke="#1E2D2F" stroke-width="1"/>
+                        <text x="270" y="276" text-anchor="middle" fill="#222222" font-size="11" font-family="sans-serif">Merengue Grooves</text>
+
+                        <rect x="363" y="210" width="162" height="125" fill="#FAF6F0" stroke="#1E2D2F" stroke-width="1"/>
+                        <text x="444" y="276" text-anchor="middle" fill="#222222" font-size="11" font-family="sans-serif">Practice &amp; Care</text>
+
+                        <rect x="15" y="348" width="510" height="44" fill="#1E2D2F"/>
+                        <text x="270" y="374" text-anchor="middle" fill="#FAF6F0" font-size="11" font-family="sans-serif">&copy; 2026 Caribe Rhythm Hub | Rayniel Elias Druyard Rojas | References</text>
+                    </svg>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Rayniel Elias Druyard Rojas | Santo Domingo, Dominican Republic</p>
+        <p>WDD 131 &ndash; Dynamic Web Fundamentals | Website Planning Document</p>
+    </footer>
+</body>
+</html>
