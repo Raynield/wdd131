@@ -1,0 +1,22 @@
+@media (min-width: 640px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    main {
+        margin: 2.25rem auto;
+    }
+
+    .review-form,
+    .confirmation-card {
+        padding: 2rem;
+    }
+
+    .rating-options {
+        gap: 0.75rem;
+    }
+
+    .stars {
+        font-size: 1rem;
+    }
+}

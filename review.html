@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted | Product Review Form</title>
+    <meta name="description" content="Confirmation page for submitted product reviews and total completed review counter.">
+    <meta name="author" content="Rayniel Elias Druyard Rojas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review</h1>
+    </header>
+
+    <main>
+        <section class="confirmation-card" aria-live="polite">
+            <h2>Review Confirmation</h2>
+            <p class="confirmation-message">Your product review has been recorded.</p>
+            <p class="review-counter">Total Reviews Completed: <strong id="review-count">0</strong></p>
+            <div id="review-summary" class="review-summary"></div>
+            <a href="form.html" class="back-link">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> | Rayniel Elias Druyard Rojas | Santo Domingo, Dominican Republic</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

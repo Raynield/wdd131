@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | WDD 131</title>
+    <meta name="description" content="Submit a product review with star rating, installation date, useful features, and optional comments for WDD 131.">
+    <meta name="author" content="Rayniel Elias Druyard Rojas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            <p class="form-note">Fields marked with <span class="required-mark" aria-hidden="true">*</span> are required.</p>
+
+            <div class="form-group">
+                <label for="product-select">Product Name <span class="required-mark">*</span></label>
+                <select id="product-select" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <fieldset class="form-group rating-fieldset">
+                <legend>Overall Rating <span class="required-mark">*</span></legend>
+                <div class="rating-options">
+                    <div class="rating-item">
+                        <label for="rating-1" class="rating-label">
+                            <span class="stars" aria-hidden="true">&#9733;</span>
+                            <span class="sr-only">1 Star</span>
+                        </label>
+                        <input type="radio" id="rating-1" name="rating" value="1" required>
+                    </div>
+                    <div class="rating-item">
+                        <label for="rating-2" class="rating-label">
+                            <span class="stars" aria-hidden="true">&#9733;&#9733;</span>
+                            <span class="sr-only">2 Stars</span>
+                        </label>
+                        <input type="radio" id="rating-2" name="rating" value="2" required>
+                    </div>
+                    <div class="rating-item">
+                        <label for="rating-3" class="rating-label">
+                            <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;</span>
+                            <span class="sr-only">3 Stars</span>
+                        </label>
+                        <input type="radio" id="rating-3" name="rating" value="3" required>
+                    </div>
+                    <div class="rating-item">
+                        <label for="rating-4" class="rating-label">
+                            <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="sr-only">4 Stars</span>
+                        </label>
+                        <input type="radio" id="rating-4" name="rating" value="4" required>
+                    </div>
+                    <div class="rating-item">
+                        <label for="rating-5" class="rating-label">
+                            <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="sr-only">5 Stars</span>
+                        </label>
+                        <input type="radio" id="rating-5" name="rating" value="5" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="install-date">Date of Installation <span class="required-mark">*</span></label>
+                <input type="date" id="install-date" name="installDate" required>
+            </div>
+
+            <fieldset class="form-group features-fieldset">
+                <legend>Which features did you find useful in the product? <span class="optional-text">(Check all that apply)</span></legend>
+                <div class="checkbox-group">
+                    <label for="feature-durability" class="checkbox-label">
+                        <input type="checkbox" id="feature-durability" name="features" value="durability">
+                        <span>Durability</span>
+                    </label>
+                    <label for="feature-ease" class="checkbox-label">
+                        <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+                        <span>Ease of Use</span>
+                    </label>
+                    <label for="feature-performance" class="checkbox-label">
+                        <input type="checkbox" id="feature-performance" name="features" value="performance">
+                        <span>Performance</span>
+                    </label>
+                    <label for="feature-design" class="checkbox-label">
+                        <input type="checkbox" id="feature-design" name="features" value="design">
+                        <span>Design</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="written-review">Written Review <span class="optional-text">(Optional)</span></label>
+                <textarea id="written-review" name="writtenReview" rows="5" placeholder="Share your experience with this product..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="user-name">Your Name <span class="optional-text">(Optional)</span></label>
+                <input type="text" id="user-name" name="userName" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group submit-group">
+                <input type="submit" value="Post Review" class="submit-btn">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> | Rayniel Elias Druyard Rojas | Santo Domingo, Dominican Republic</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
